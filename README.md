@@ -6,7 +6,7 @@ Coming soon. This repo contains all the required code for the Azure ML Workshop 
 ## Install Anaconda
 
 - Download: https://docs.anaconda.com/anaconda/install/
-- Create environment: conda create --name [your environment name here] python=3.5
+- Create environment: `conda create --name [your environment name here] python=3.5`
 
 ## Install Jupyter Notebook
 
