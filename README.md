@@ -13,6 +13,7 @@ Coming soon. This repo contains all the required code for the Azure ML Workshop 
 
 - Download: https://jupyter.readthedocs.io/en/latest/install.html
 - Set kernel: python -m ipykernel install --user --name [your environment name here] --display-name "Python 3.5 (Azure ML Studio)"
+- Select kernel on Jupyter: Kernel --> Change Kernel --> "Python 3.5 (Azure ML Studio)"
 
 ## Instal Plotly Dash
 
