@@ -1,7 +1,11 @@
 # azureml-iotfuse2019
-Coming soon. This repo contains all the required code for the Azure ML Workshop at IoTFuse 2019. 
+This repo contains all the required code for the Azure ML Workshop at IoTFuse 2019. 
 
 # Getting started
+
+## Join the Slack channel!
+
+https://join.slack.com/t/iotfuse2019/shared_invite/enQtNjE5NTQwMDM4Mzc0LTg0M2I5MzgyNzk1YmZjNTFmOTNmNTc1ZDhjOTliYzliMDBmNTBkZGVlZjgwZTcxOTIyNzc2ZDFhYzVmZTdiNzg
 
 ## Install Anaconda
 
@@ -15,7 +19,7 @@ Coming soon. This repo contains all the required code for the Azure ML Workshop 
 - Set kernel: python -m ipykernel install --user --name [your environment name here] --display-name "Python 3.5 (Azure ML Studio)"
 - Select kernel on Jupyter: Kernel --> Change Kernel --> "Python 3.5 (Azure ML Studio)"
 
-## Instal Plotly Dash
+## Install Plotly Dash
 
 - `pip install dash==0.39.0` - The core dash backend
 - `pip install dash-daq==0.1.0` - DAQ components (newly open-sourced!)
