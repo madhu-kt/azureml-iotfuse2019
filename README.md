@@ -24,3 +24,8 @@ https://join.slack.com/t/iotfuse2019/shared_invite/enQtNjE5NTQwMDM4Mzc0LTg0M2I5M
 - `pip install dash==0.39.0` - The core dash backend
 - `pip install dash-daq==0.1.0` - DAQ components (newly open-sourced!)
 - `pip install azure-storage` - Data storage
+
+# Other Resources
+
+- NASA C-MAPSS dataset paper: https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20150007677.pdf
+- Azure ML Studio: https://studio.azureml.net/
