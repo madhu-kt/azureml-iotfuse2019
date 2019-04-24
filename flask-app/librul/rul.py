@@ -66,7 +66,8 @@ def getTrainingStats(block_blob_service):
                                             full_path,
                                             local_file_name)
         print("Blob downloaded to: %s. Reading file..."%local_file_name)
-        return pd.read_csv(local_file_name)
+        df = pd.read_csv(local_file_name)
+        return {'model_accuracy':(df['Predicted as "0"'][0]+df['Predicted as "1"'][1]+df['Predicted as "2"'][2])/df[['Predicted as "0"','Predicted as "1"','Predicted as "2"']].sum().sum()}
 
 def getUnitList(data):
     return list(np.unique(data['UnitNumber']))
@@ -109,8 +110,8 @@ def getPredictedAlert(data,unitNumber):
     }
     
     body = str.encode(json.dumps(data))
-    url = 'https://ussouthcentral.services.azureml.net/workspaces/fe1a6222af3547dda7a03e12a0fbdde0/services/d3ffda6df41447b296634cf43a1d7976/execute?api-version=2.0&format=swagger'
-    api_key = 'nSe7bGCM2qGYMuTWK1Soa0WQ5AZjsOnpM9Um4aaOiN8mT/WxFQpc/N0QLG6J/obUjSv+BlRDepZsxEtUWivjlQ==' # Replace this with the API key for the web service
+    url = '[ENTER THE URL OF THE AZURE HTTP ENDPOINT HERE]'
+    api_key = '[ENTER THE API KEY FOR THE ABOVE ENDPOINT HERE]' # Replace this with the API key for the web service
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
     
     req = urllib.request.Request(url, body, headers)

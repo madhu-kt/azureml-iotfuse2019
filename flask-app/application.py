@@ -118,7 +118,7 @@ def get_rul_data(unitNumber):
     unitNumber = int(unitNumber)
     if not unitNumber:
         raise PreventUpdate()
-    trainingStats = rul.getTrainingStats(testData)#{'model_accuracy':0.95,'data_integrity':1.0}
+    trainingStats = rul.getTrainingStats(block_blob_service)#{'model_accuracy':0.95,'data_integrity':1.0}
     predictedAlert = rul.getPredictedAlert(testData,unitNumber)
     sensorData = rul.getLatestTS(testData,unitNumber,nCycles=10)
     
